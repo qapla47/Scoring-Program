@@ -13,7 +13,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to Appendix A Scoring</h1>
-          <AASAppBar></AASAppBar>
+          {/* <AASAppBar></AASAppBar> */}
         </header>
         <ul>
           <h3>This project aims to provide:</h3>   
