@@ -1,15 +1,16 @@
 .App {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  //animation: App-logo-spin infinite 20s linear;
+  height: 200px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: rgb(167,207,255);
+  height: 250px;
   padding: 20px;
   color: white;
 }
@@ -22,7 +23,7 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+} */

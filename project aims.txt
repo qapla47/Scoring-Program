@@ -1,0 +1,22 @@
+What is a scoring program
+a program which takes user input and calculates scores
+
+storage structure
+root node
+club level (RYC) - User input
+Year (2017) - query computer -> also user choice if needing to rescore old results
+Day of Week (M T W R F A U) - query computer -> also user choice same as above
+Fleet (J24, Sonar, Lightning -OD ) user input
+Series (spring, summer, fall) - initially user input, then query computer with user choice for above reasons
+Individual Races - user input
+
+Boat Data:
+how to connect the individual races with the boat?
+Id can be sail#
+
+
+Special considerations
+One Design racing -> first to cross = winner
+PHRF & IRC fleets -> handicapping
+how to handle Sail# duplicates?
+how to score 
