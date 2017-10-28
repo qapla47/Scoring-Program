@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import logo from '../src/Images/AAS_logo-01.svg';
 import './App.css';
-import AASAppBar from './Components/AppBar/AppBar.js'
-// import ClubRegForm from './Components/clubRegForm/ClubRegForm.js';
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import CRF from './Components/clubRegForm/ClubRegForm.js';
+
 
 class App extends Component {
   render() {
@@ -30,10 +29,12 @@ class App extends Component {
           <li>To incorporate image recognition into scoring information</li>
         </ul>
 
-        {/* <div className="ClubRegForm">
+        {/* {<div className="ClubRegForm">
           <ClubRegForm></ClubRegForm>
         </div> */}
-
+        <div className="CRF">
+          <CRF />
+        </div>
         <form>
           <p className="App-intro">
             To get started, please login:

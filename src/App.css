@@ -1,3 +1,5 @@
+@import '../src/Components/clubRegForm/ClubRegForm.css';
+
 .App {
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -21,6 +23,16 @@
 
 .App-intro {
   font-size: large;
+}
+
+.App-form {
+  text-align: left;
+}
+
+.CRF {
+  position: relative;
+  margin: 5% 25% 5% 25%;
+  max-width: 75%;
 }
 
 /* @keyframes App-logo-spin {
