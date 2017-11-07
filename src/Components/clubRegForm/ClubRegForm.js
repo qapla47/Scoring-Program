@@ -25,9 +25,9 @@ export default class CRF extends React.Component {
         </FormGroup>
 
         <FormGroup>
-          <Label for="clubFleets">Text Area</Label>
+          <Label for="clubFleets">What Fleets does your club have?</Label>
           <Input type="textarea" name="clubFleets" id="clubFleets" />
-          <button for="addClubFleets">Enter Fleet</button>
+          <button for="addClubFleets">Enter Fleets</button>
         </FormGroup>
         
         <Button>Submit</Button>

@@ -35,6 +35,7 @@ class App extends Component {
         <div className="CRF">
           <CRF />
         </div>
+        
         <form>
           <p className="App-intro">
             To get started, please login:
