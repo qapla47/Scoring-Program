@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import logo from '../src/Images/AAS_logo-01.svg';
+
 import './App.css';
 
-import CRF from './Components/clubRegForm/ClubRegForm.js';
 
+import CRF from './Components/clubRegForm/ClubRegForm.js';
+import URF from './Components/UserRegForm/UserRegForm';
+import SSF from './Components/SeasonSetupForm/SeasonSetupForm';
+import LF from './Components/LoginForm/LoginForm';
 
 class App extends Component {
   render() {
@@ -32,29 +36,24 @@ class App extends Component {
         {/* {<div className="ClubRegForm">
           <ClubRegForm></ClubRegForm>
         </div> */}
+        
+        <div className="LF">
+          <LF />
+        </div>
+
+        <div className="URF">
+          <URF />
+        </div>
+
         <div className="CRF">
           <CRF />
         </div>
         
-        <form>
-          <p className="App-intro">
-            To get started, please login:
-          </p>
-          <label>
-            User Name:
-            <input type = 'text' name = 'userName'/>
-          </label>
-          <label>
-            Password:
-            <input type = 'text' name = 'password' />
-          </label>
-            <input type = 'submit' value = 'submit' />
-        </form>
-        <p>
-          Not a user yet? Head over here to sign up
-        </p>
-        <button>sign up</button>
-      </div>
+        <div className="SSF">
+          <SSF />
+        </div>
+
+       </div>
     );
   }
 }

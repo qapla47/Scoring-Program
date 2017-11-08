@@ -29,7 +29,7 @@
   text-align: left;
 }
 
-.CRF {
+.CRF, .URF, .SSF, {
   position: relative;
   margin: 5% 25% 5% 25%;
   max-width: 75%;

@@ -5,10 +5,16 @@ export default class CRF extends React.Component {
   render() {
     return (
       <Form>
-        <h3>Club Registration Form</h3>
+        <h3><strong>Club Registration Form</strong></h3>
+        
         <FormGroup id="clubName">
           <Label for="clubName">Club Name</Label>
           <Input type="text" name="clubName" id="clubName" placeholder="What club are you registering?" />
+        </FormGroup>
+
+        <FormGroup id="clubAddress">
+          <Label for="clubAddress">Club Address</Label>
+          <Input type="textarea" name="clubAddress" id="clubAddress" placeholder="Where is your club located?" />
         </FormGroup>
        
         <FormGroup>
@@ -24,11 +30,7 @@ export default class CRF extends React.Component {
           </Input>
         </FormGroup>
 
-        <FormGroup>
-          <Label for="clubFleets">What Fleets does your club have?</Label>
-          <Input type="textarea" name="clubFleets" id="clubFleets" />
-          <button for="addClubFleets">Enter Fleets</button>
-        </FormGroup>
+       
         
         <Button>Submit</Button>
       </Form>
