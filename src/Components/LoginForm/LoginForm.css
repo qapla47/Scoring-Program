@@ -1,15 +1,14 @@
-.CRF {
-  text-align: left;
-  max-width: 80%;
+.LF {
+  align-items: center;
+  max-width: 95%;
   padding: 15px;
   border: 1px solid rgb(17, 67, 127);
   background-color: rgba(111, 176, 255, .3);
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
-  margin: 2.5% 15% ;
+  margin: 2.5%;
 }
-
-.CRF-formgroup-clubName {
-  padding: 3px;
-  margin: 3px;
+.LF-Form-FormGroup-email {
+  margin: 5px;
+  padding: 2px;
 }

@@ -27,6 +27,13 @@ export default class SSF extends React.Component {
           {/* <button for="addClubSeries">Enter Series</button> */}
         </FormGroup>
 
+        <FormGroup check>
+          <Label check>
+            <Input type="checkbox" />{' '}
+            Overall Season Scoring? 
+          </Label>
+        </FormGroup>
+
         <FormGroup>
           <Label for="weeksInSeries">Select the number of weeks scheduled for a series</Label>
           <Input type="select" name="weeksInSeries" id="weeksInSeries">

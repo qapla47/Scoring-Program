@@ -1,4 +1,4 @@
-@import '../src/Components/clubRegForm/ClubRegForm.css';
+@import '../src/Components/componentsCommon.css';
 
 .App {
   text-align: center;
@@ -28,12 +28,17 @@
 .App-form {
   text-align: left;
 }
+.App-ul {
+  max-width: 80%;
+  position: relative;
+  margin: 2.5% 15% ;
+}
 
-.CRF, .URF, .SSF, {
+/* .CRF, .URF, .SSF, {
   position: relative;
   margin: 5% 25% 5% 25%;
   max-width: 75%;
-}
+} */
 
 /* @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

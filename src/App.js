@@ -8,6 +8,7 @@ import CRF from './Components/clubRegForm/ClubRegForm.js';
 import URF from './Components/UserRegForm/UserRegForm';
 import SSF from './Components/SeasonSetupForm/SeasonSetupForm';
 import LF from './Components/LoginForm/LoginForm';
+import FRF from './Components/FleetRegForm/FleetRegForm';
 
 class App extends Component {
   render() {
@@ -51,6 +52,10 @@ class App extends Component {
         
         <div className="SSF">
           <SSF />
+        </div>
+
+        <div className="FRF">
+          <FRF />
         </div>
 
        </div>
