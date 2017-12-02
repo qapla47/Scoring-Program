@@ -3,8 +3,8 @@
   max-width: 80%;
   padding: 15px;
   border: 1px solid rgb(17, 67, 127);
-  background-color: rgba(111, 176, 255, .3);
+  background-color: rgba(111, 176, 255, 0.3);
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
-  margin: 2.5% 15% ;
+  margin: 2.5% 15%;
 }
