@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const BoatSchema = new Schema({
-  sail-BowNumber: {
+  sailBowNumber: {
     type: String,
     unique: true,
     required: true
@@ -60,6 +60,10 @@ const BoatSchema = new Schema({
   clubAffiliation: {
     type: String,
     required: true
+  },
+  fleetAffiliation: {
+    type: Schema.Types.ObjectId,
+    ref: "Fleet"
   }
 });
 

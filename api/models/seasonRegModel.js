@@ -24,4 +24,4 @@ const SeasonSchema = new Schema({
   }
 });
 
-module.exports = mongoose.model("Season", UserSchema);
+module.exports = mongoose.model("Season", SeasonSchema);

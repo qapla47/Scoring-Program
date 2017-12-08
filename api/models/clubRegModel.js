@@ -24,11 +24,11 @@ const ClubSchema = new Schema({
         type: String,
         required: true,
       },
-      state-province: {
+      stateProvince: {
         type: String,
         required: true,
       },
-      zip-postCode: {
+      zipPostCode: {
         type: String,
         required: true,
       },

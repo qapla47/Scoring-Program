@@ -1,22 +1,41 @@
 import React, { Component } from "react";
-import logo from "../src/Images/AAS_logo-01.svg";
-import React from 'react';
+
 import {
   BrowserRouter as Router,
   Route,
   Link,
 } from 'react-router-dom';
 
+import * as Components from './Components';
+import logo from "../src/Images/AAS_logo-01.svg";
 import "./App.css";
 
-import CRF from "./Components/clubRegForm/ClubRegForm.js";
-import URF from "./Components/UserRegForm/UserRegForm";
-import SSF from "./Components/SeasonSetupForm/SeasonSetupForm";
-import LF from "./Components/LoginForm/LoginForm";
-import FRF from "./Components/FleetRegForm/FleetRegForm";
+
 
 class App extends Component {
+
+  constructor(){
+    super();
+    this.state = {
+      loggedIn: false,
+    };
+  }
+
+  componentWillMount() {
+    if (localStorage.getItem('uuID')) {
+      this.setState({loggedIn: true});
+    } else {
+      this.setState({loggedIn: false});
+    }
+  }
+
+  doLogout() {
+    localStorage.setItem('uuID', '');
+    wondow.location = '/';
+  }
+
   render() {
+    const { loggedIn } = this.state;
     return (
       <div className="App">
         <header className="App-header">
@@ -45,30 +64,16 @@ class App extends Component {
           <ClubRegForm></ClubRegForm>
         </div> */}
 
-        <div className="LF">
-          <Route exact path="/" component={LF}/>
-          {/* <LF /> */}
-        </div>
+        <Route exact path="/" component={Components.LF}></Route>
+        <Route path="/new-user" component={Components.URF}></Route>
+        <Route path="/new-club" component={Components.URF}></Route>
+        <Route path="/new-season" component={Components.SSF}></Route>
+        {/* <Route path="/new-day" component={Components.DRF}></Route> */}
+        {/* <Route path="/new-series" component={Components.SRRF}></Route> */}
+        <Route path="/new-fleet" component={Components.FRF}></Route>
+        {/* <Route path="/new-boat" component={Components.BRF}></Route> */}
+        {/* <Route path="/new-race" component={Components.RDF}></Route> */}
 
-        <div className="URF">
-        <Route path="/URF" component={URF} />
-          {/* <URF /> */}
-        </div>
-
-        <div className="CRF">
-          <Route path="/CRF" component={URF} />
-          {/* <CRF /> */}
-        </div>
-
-        <div className="SSF">
-          <Route path="/SSF" component={SSF} />
-          {/* <SSF /> */}
-        </div>
-
-        <div className="FRF">
-        <Route path="/FRF" component={FRF} />
-          {/* <FRF /> */}
-        </div>
       </div>
     );
   }

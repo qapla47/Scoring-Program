@@ -31,7 +31,7 @@ const UserSchema = new Schema({
       type: Boolean
     },
     usSailingNumber: {
-      type: text
+      type: String
     }
   }
 });

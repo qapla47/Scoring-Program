@@ -9,7 +9,7 @@ const FleetSchema = new Schema({
   },
   fleetRaceDays: [{
     type: Schema.Types.ObjectId,
-    ref: 'Club'
+    ref: 'Club',
     required: true
   }],
   handicapMethod: {
